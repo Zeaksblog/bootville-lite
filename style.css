@@ -1,0 +1,566 @@
+/*
+Theme Name: Bootville Lite
+Theme URI: http://zeaks.org
+Author: Scott Dixon
+Author URI: http://zeaks.org
+Description: Bootville Lite Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootville
+Domain Path: /languages/
+Tags: right-sidebar
+
+Bootville Lite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Fonts
+2.0 Header area
+3.0 Layout
+4.0 Posts and pages
+5.0 Author Info Box
+6.0 Comments
+7.0 Footer
+8.0 Post Meta
+9.0 Widgets
+10.0 Social menu
+11.0 Search
+12.0 Asides
+13.0 Infinite scroll
+14.0 Alignments
+15.0 Media
+16.0 Captions
+17.0 Galleries
+18.0 Media Queries
+19.0 Custom CSS
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1.0 Fonts
+--------------------------------------------------------------*/
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #666666;
+}
+
+a {
+	color: #0088cc;
+} 
+
+p {
+	font-size: 16px;
+	line-height: 26px;
+}
+body { background: #eaeaea; }
+/*-------------------------------------------------------------
+2.0 Header Area
+-------------------------------------------------------------*/
+.site-title {
+	margin: 0;
+}
+.site-description {
+	margin: 1em 0 2em;
+	font-size: 14px;
+}
+/* hide site title on mobile */
+@media only screen and (max-width : 768px) {
+	.site-title, .site-description {
+		display: none; 
+	}
+}
+.header-image {
+	border: 1px solid #dddddd;
+	padding: 10px;
+}
+.navbar {
+    border-radius: 0;
+}
+/*-------------------------------------------------------------
+3.0 Layout
+---------------------------------------------------------------*/
+.wrap {
+	background-color: #ffffff;
+	padding: 3em 3em 0;
+	border: 1px solid #dddddd;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.05) 0 0 3px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.05) 0 0 3px;
+	box-shadow: rgba(0, 0, 0, 0.05) 0 0 3px;
+}
+
+/*larger devices than 768px*/
+@media (min-width: 768px) {
+	.nav-container {
+		padding: 0;
+	}
+	.wrap {
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+	.site-content {
+		padding-top: 3em;
+	}
+	#secondary {
+		margin-top: 25px;
+	}
+}
+/* reduce padding on mobile */
+@media (max-width: 768px) {
+	.wrap {
+		padding: 1em;
+	}
+}
+
+/*--------------------------------------------------------------
+4.0 Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+}
+.hentry {
+	margin: 0 0 2.8em;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 2.8em;
+}
+.byline,
+.updated {
+	display: none;
+}
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+/*img.wp-post-image {
+	margin-bottom: 20px;
+}*/
+.featured-image  {
+	margin-bottom: 20px;
+}
+.portfolio img.wp-post-image {
+	margin-bottom: 0;
+}
+.site-main {
+	word-wrap: break-word;
+}
+.entry-title {
+    -padding-bottom: 5px;
+}
+.entry-header {
+	padding-bottom: 15px;
+}
+
+/*-------------------------------------------------------------
+5.0 Author Info Box
+--------------------------------------------------------------*/
+.author-meta {
+	margin-top: 40px;
+}
+
+.author-meta .avatar {
+	border-radius: 50%;
+}
+.author-meta .fa{
+	font-size: 22px;
+}
+.author-meta.well-lg {
+    padding: 24px 24px 20px;
+}
+
+/*--------------------------------------------------------------
+6.0 Comments
+--------------------------------------------------------------*/
+
+.comment-content a {
+	word-wrap: break-word;
+}
+.bypostauthor {
+
+}
+.comments-title, .comment-reply-title {
+	padding-bottom: 9px;
+	margin: 40px 0 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+ol.comment-list {
+	list-style:none;
+	padding-left: 0;
+}
+.comment-author .avatar {
+	margin-right: 25px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	padding: 4px;
+}
+.comment-meta {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.comment-details {
+	overflow: hidden;
+	zoom: 1;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ddd;
+}
+.comment-details .reply {
+	margin-top: 10px;
+}
+.comment-date a {
+	font-size: 11px;
+	color: #777;
+	margin-right: 10px;
+}
+#commentform #comment {
+	width: 100% !important;
+}
+
+/*--------------------------------------------------------------
+7.0 Footer
+--------------------------------------------------------------*/
+.paging-navigation {
+	padding-top:5px;
+}
+
+.footer-widgets { 
+	margin-top:35px;
+}
+
+
+.footer-menu {
+	margin-left:0;
+	padding:0 0 30px 0;
+}
+
+.footer-menu li {
+	display:inline;
+	list-style-type:none;
+}
+
+.footer-menu li a {
+	border-left:1px solid #ddd;
+	padding: 0 8px;
+}
+
+.footer-menu > li:first-child > a {
+	border-left:none;
+	padding:0 8px 0 0;
+}
+
+.copyright {
+	font-size:14px;
+}
+
+@media (min-width: 768px) {
+	.row.credits {
+		padding: 30px 0;
+	}
+}
+@media only screen and (min-width : 992px) {
+	.copyright {
+		float: right;
+	}
+}
+
+/*--------------------------------------------------------------
+8.0 Post Meta
+--------------------------------------------------------------*/
+
+.entry-meta span {
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.entry-meta span:last-child {
+	margin-right: 0;
+}
+
+.entry-meta span .fa{
+	color: #bcbcbc;
+}
+
+.entry-meta span a {
+	color: #777;
+	text-decoration: none;
+}
+
+.entry-meta span a:hover {
+	text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+	word-wrap: break-word;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	max-width: 100%;
+}
+
+/* Search widget */
+.widget_search .search-submit {
+	display: none;
+}
+.widget-area {
+	word-wrap: break-word;
+}
+.widget-area .panel ul {
+    padding: 0 25px;
+}
+.panel-default > .panel-heading {
+    margin-bottom: 10px;
+}
+.textwidget { 
+	padding: 10px;
+}
+#calendar_wrap {
+	padding: 5px;
+}
+/*----------------------------------------------------------------
+10.0 Social Menu
+-----------------------------------------------------------------*/
+
+.screen-reader-text {
+	position: absolute;
+	top:      -9999em;
+	left:     -9999em;
+}
+#menu-social li {
+	float: none;
+	display: inline-block;
+	margin: 0 0 2px 0;
+	width: auto;
+}
+#menu-social a {
+	display: block;
+	border-bottom: 0;
+	width: 36px;
+	height: 36px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	opacity: 1.0;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+#menu-social a:hover {
+	color: #fff;
+	opacity: 0.8;
+}
+#menu-social a:before {
+	font-family: 'FontAwesome';
+	text-align: center;
+	font-size: 20px;
+	line-height: 36px;
+	position: relative;
+}
+#menu-social a:hover { text-decoration: none; }
+#menu-social ul { margin-top: 20px; }
+
+/* add icons here */
+#menu-social li a[href$="/feed/"] { background: #fb7629; }
+#menu-social li a[href$="/feed/"]:before { content: "\f09e"; }
+
+#menu-social li a[href*="plus.google.com"] { background: #CF3D2E; }
+#menu-social li a[href*="plus.google.com"]:before { content: "\f0d5"; }
+
+#menu-social li a[href*="instagram.com"] { background: #A1755C; }
+#menu-social li a[href*="instagram.com"]:before { content: "\f16d"; }
+
+#menu-social li a[href*="linkedin.com"] { background: #0085AE; }
+#menu-social li a[href*="linkedin.com"]:before { content: "\f0e1"; }
+
+#menu-social li a[href*="pinterest.com"] { background: #bd071d; }
+#menu-social li a[href*="pinterest.com"]:before { content: "\f0d2"; }
+
+#menu-social li a[href*="twitter.com"] { background: #32CCFE; }
+#menu-social li a[href*="twitter.com"]:before { content: "\f099"; }
+
+#menu-social li a[href*="github.com"] { background: #070709;}
+#menu-social li  a[href*="github.com"]:before { content: "\f09b"; }
+
+#menu-social li a[href*="mailto:"] { background: #98c9ea; }
+#menu-social li a[href*="mailto:"]:before { content: "\f0e0";}
+
+#menu-social li a[href*="wordpress.com"] { background: #aaa;}
+#menu-social li  a[href*="wordpress.com"]:before { content: "\f19a"; }
+
+#menu-social li a[href*="facebook.com"] { background:#3C599F;}
+#menu-social li  a[href*="facebook.com"]:before { content: "\f09a"; }
+
+/*--------------------------------------------------------------
+11.0 Search
+--------------------------------------------------------------*/
+.search-highlight {
+    background:#FFFF00  
+}
+/* remove panel border from search widget */
+.widget_search.panel-default {
+	border: none;
+}
+/*--------------------------------------------------------------
+12.0 Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+	display: none;
+}
+
+/*--------------------------------------------------------------
+13.0 Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+14.0 Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+15.0 Media
+--------------------------------------------------------------*/
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object,
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/*--------------------------------------------------------------
+16.0 Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin: 0 auto;
+}
+.wp-caption-text {
+	text-align: center;
+}
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+
+/*--------------------------------------------------------------
+17.0 Galleries
+--------------------------------------------------------------*/
+
+.gallery {
+	margin-bottom: 1.5em;
+}
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+.gallery-caption {}
+
+/*--------------------------------------------------------------
+18.0 Media Queries 
+--------------------------------------------------------------*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+/*-------------------------------------------------------------
+19.0 Custom CSS
+--------------------------------------------------------------*/
+
