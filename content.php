@@ -42,8 +42,12 @@
 			</div>
 			</a>
 		<?php endif; ?>
-		
+		<!-- display manual excerpt if it exists otherwise the content -->
+		<?php if ( has_excerpt() ) {
+			the_excerpt();
+			} else { ?>		
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'bootville' ) ); ?>
+			<?php } ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'bootville' ),

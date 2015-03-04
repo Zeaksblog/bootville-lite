@@ -102,7 +102,7 @@ body { background: #eaeaea; }
 		margin-bottom: 3em;
 	}
 	.site-content {
-		padding-top: 3em;
+		padding-top: 2em;
 	}
 	#secondary {
 		margin-top: 25px;
@@ -240,7 +240,6 @@ ol.comment-list {
 .footer-widgets { 
 	margin-top:35px;
 }
-
 
 .footer-menu {
 	margin-left:0;
@@ -412,11 +411,14 @@ ol.comment-list {
 11.0 Search
 --------------------------------------------------------------*/
 .search-highlight {
-    background:#FFFF00  
+    background:#FFFF00;  
 }
 /* remove panel border from search widget */
 .widget_search.panel-default {
 	border: none;
+}
+.search .edit-link {
+	margin-left:10px;
 }
 /*--------------------------------------------------------------
 12.0 Asides
@@ -481,9 +483,15 @@ img {
 /*--------------------------------------------------------------
 16.0 Captions
 --------------------------------------------------------------*/
+
 .wp-caption {
 	margin-bottom: 1.5em;
 	max-width: 100%;
+	background-color: #f8f8f8;
+	border: 1px solid;
+	border-color: #e7e7e7;
+	padding: 5px;
+	text-align: left;
 }
 .wp-caption img[class*="wp-image-"] {
 	display: block;
@@ -495,7 +503,6 @@ img {
 .wp-caption .wp-caption-text {
 	margin: 0.8075em 0;
 }
-
 
 /*--------------------------------------------------------------
 17.0 Galleries

@@ -31,7 +31,7 @@
 				</h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 			</div>		
-
+			<!-- social menu -->
 			<div class="col-md-6 col-lg-6"><span class="pull-right">
 				<?php if ( has_nav_menu( 'social' ) ) {
 
@@ -94,7 +94,7 @@
 			<?php if (function_exists('cptbc_columns_head')) { ?>
 
 				<div class="header-image">
-				<?php echo do_shortcode('[image-carousel]'); ?>
+					<?php echo do_shortcode('[image-carousel]'); ?>
 				</div> <!-- .header-image -->
 
 			<?php } else {
@@ -103,7 +103,7 @@
 			if ( ! empty($header_image) ) { ?>
 
 				<div class="header-image">
-				<img src="<?php header_image(); ?>" />
+					<img src="<?php header_image(); ?>" />
 				</div> <!-- .header-image -->
 
 			<?php } } ?>

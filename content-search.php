@@ -20,7 +20,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+		<?php search_excerpt_highlight(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
