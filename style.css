@@ -476,7 +476,27 @@ img {
 	max-width: 100%;
 	height: auto;
 }
-
+/*--------------------------------------------------------------
+Video embed fix
+use <div class="video-frame">embed code</div>
+--------------------------------------------------------------*/
+.video-frame {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+	margin-bottom:10px;
+}
+.video-frame iframe,
+.video-frame object,
+.video-frame embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
 /*--------------------------------------------------------------
 16.0 Captions
 --------------------------------------------------------------*/
