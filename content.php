@@ -38,7 +38,7 @@
 		<?php if ( has_post_thumbnail() ) : ?>
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			<div class="featured-image">
-			<?php the_post_thumbnail(); ?>
+			<?php the_post_thumbnail('featured-large'); ?>
 			</div>
 			</a>
 		<?php endif; ?>

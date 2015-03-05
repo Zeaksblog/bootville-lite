@@ -69,7 +69,7 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 	add_theme_support('post-thumbnails');
 	
 // Add featured image sizes
-	//add_image_size( 'featured-large', 640, 294, true ); // width, height, crop
+add_image_size( 'featured-large', 712, 400, true ); // width, height, crop
 //Optional Slider image size
 	add_image_size('slider', 1090, 400, true);
 

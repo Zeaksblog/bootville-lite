@@ -565,6 +565,9 @@ img {
 
 }
 /*-------------------------------------------------------------
-19.0 Custom CSS
+19.0 Custom CSS and Plugin Styles
 --------------------------------------------------------------*/
-
+/* Recent comments with avatars https://wordpress.org/plugins/wp-recent-comments-with-avatars/ */
+ul#recentcomments img.avatar {
+	padding: 2px !important;
+}
