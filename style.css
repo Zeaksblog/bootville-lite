@@ -42,7 +42,6 @@ Bootville Lite is based on Underscores http://underscores.me/, (C) 2012-2014 Aut
 1.0 Fonts
 --------------------------------------------------------------*/
 body {
-	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #666666;
@@ -154,9 +153,7 @@ body { background: #eaeaea; }
 .site-main {
 	word-wrap: break-word;
 }
-.entry-title {
-    -padding-bottom: 5px;
-}
+
 .entry-header {
 	padding-bottom: 15px;
 }
