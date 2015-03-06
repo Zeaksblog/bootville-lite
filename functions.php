@@ -47,16 +47,16 @@ function bootville_setup() {
   // Custom Header
   $header_args = array(
       'random-default'         => false,
-      'width'                  => 1090,
-      'height'                 => 400,
+      'width'                  => 1062,
+      'height'                 => 350,
       'flex-height'            => true,
       'flex-width'             => true,
       'header-text'            => false,
       'uploads'                => true,
   );
   add_theme_support( 'custom-header', $header_args );
-  add_theme_support( 'allow_flexible_header_height', 200 );
-  add_theme_support( 'allow_flexible_header_width', 1000 );	
+  add_theme_support( 'allow_flexible_header_height', 350 );
+  add_theme_support( 'allow_flexible_header_width', 1062 );	
   
  
 // Set content width
@@ -69,9 +69,9 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 	add_theme_support('post-thumbnails');
 	
 // Add featured image sizes
-add_image_size( 'featured-large', 712, 400, true ); // width, height, crop
+add_image_size( 'featured-large', 712, 9999 ); // width, height, crop
 //Optional Slider image size
-	add_image_size('slider', 1090, 400, true);
+	add_image_size('slider', 1062, 350, true);
 
 // This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

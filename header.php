@@ -26,10 +26,12 @@
 	<header id="masthead" class="site-header" role="banner">
 	
 			<div class="col-md-6 col-lg-6">
-				<h1 class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				<span class="pull-left">
+					<h1 class="site-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</h1>
+					<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
+				</span>
 			</div>		
 			<!-- social menu -->
 			<div class="col-md-6 col-lg-6"><span class="pull-right">
@@ -55,8 +57,8 @@
 			</span>
 		
 	</header>
+</div> <!--.row-->
 
-	</div> <!--.row-->
 			<nav role="navigation">
 				<div class="main-menu navbar navbar-default">					
 					<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->

@@ -41,8 +41,8 @@
 				<p class="copyright">&copy; <?php _e('Copyright', 'bootville'); ?> <?php echo date('Y'); ?> - <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
 				</div>
 			</div><!-- .row -->	
+			
 	</footer><!-- #colophon -->
-
 </div><!-- #wrap -->
 
 <?php wp_footer(); ?>

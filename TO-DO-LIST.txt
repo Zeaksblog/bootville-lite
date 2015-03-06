@@ -8,6 +8,7 @@ Run speed test and minify javascripts and admin styles
 Add remaining social icons for social menu
 Write FAQ for child themes, slider setup and shortcodes
 Add theme tags to stylesheet
+Add Powered By and put footer menu on top level under widgets
 
 
 Finished
