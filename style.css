@@ -608,3 +608,6 @@ use <div class="video-frame">embed code</div>
 ul#recentcomments img.avatar {
 	padding: 2px !important;
 }
+ul#recentcomments li.recentcomments {
+	min-height: 45px !important;
+}
