@@ -52,7 +52,13 @@
 			
 			<div class="col-md-6 col-lg-6 col-lg-pull-6">
 				<div class="site-info">
-					<?php do_action( 'twentytwelve_credits' ); ?>
+
+        <!-- company -->
+        <a href="<?php echo esc_url( __( 'http://zeaks.org/bootville-lite/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Bootville Lite', 'bootville' ); ?>"> <?php printf( 'Bootville Lite', 'bootville' ); ?></a>
+		        <!-- wordpress theme -->
+        <?php printf( 'Theme ', 'bootville' ); ?> 
+					
+					
 					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'bootville' ); ?>"><?php printf( __( 'Powered by %s', 'bootville' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->	
 			</div>	
