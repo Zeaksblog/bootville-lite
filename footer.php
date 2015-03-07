@@ -24,8 +24,9 @@
 				</div>
 			</div><!--row-->
 	
-			<div class="row credits">
-						<div class="col-md-6 col-lg-6">
+			<div class="row">
+				<div class="footer-menu">
+						<div class="col-lg-12 col-md-12">
 							<?php if (has_nav_menu('footer-menu', 'bootville')) { ?>
 								<nav role="navigation">
 								<?php wp_nav_menu(array(
@@ -37,11 +38,27 @@
 							  </nav>
 							<?php } ?>
 						</div>
-					<div class="col-md-6 col-lg-6">
-				<p class="copyright">&copy; <?php _e('Copyright', 'bootville'); ?> <?php echo date('Y'); ?> - <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
-				</div>
+					</div><!-- .footer-menu-->
 			</div><!-- .row -->	
+		
+		<div class="row">
+			<div class="credits">
+		
+			<div class="col-md-6 col-lg-6 col-lg-push-6">
+			<div class="copyright">
+				<p class="copyright">&copy; <?php _e('Copyright', 'bootville'); ?> <?php echo date('Y'); ?> - <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+			</div>
+			</div>
 			
+			<div class="col-md-6 col-lg-6 col-lg-pull-6">
+				<div class="site-info">
+					<?php do_action( 'twentytwelve_credits' ); ?>
+					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'bootville' ); ?>"><?php printf( __( 'Powered by %s', 'bootville' ), 'WordPress' ); ?></a>
+				</div><!-- .site-info -->	
+			</div>	
+			</div><!-- .credits -->
+		</div><!-- .row -->
+		
 	</footer><!-- #colophon -->
 </div><!-- #wrap -->
 
