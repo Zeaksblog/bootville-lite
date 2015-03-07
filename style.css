@@ -3,13 +3,13 @@ Theme Name: Bootville Lite
 Theme URI: http://zeaks.org
 Author: Scott Dixon
 Author URI: http://zeaks.org
-Description: Bootville Lite Theme
+Description: A clean Underscores theme built with BootStrap
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: bootville
 Domain Path: /languages/
-Tags: right-sidebar
+Tags: White, Blue, Custom Background, Custom Header, Custom Menu, Editor Style, Featured Images, Flexible Header, Fluid Layout, Full Width Template, Light, Microformats, One Column, Post Formats, Responsive Layout, Right Sidebar, Sticky Post, Threaded Comments, Two Columns
 
 Bootville Lite is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 */
@@ -277,8 +277,6 @@ ol.comment-list {
 	}
 }
 
-
-
 /*--------------------------------------------------------------
 8.0 Post Meta
 --------------------------------------------------------------*/
@@ -308,6 +306,7 @@ ol.comment-list {
 /*--------------------------------------------------------------
 9.0 Widgets
 --------------------------------------------------------------*/
+
 .widget {
 	margin: 0 0 1.5em;
 	word-wrap: break-word;
@@ -337,6 +336,7 @@ ol.comment-list {
 #calendar_wrap {
 	padding: 5px;
 }
+
 /*----------------------------------------------------------------
 10.0 Social Menu
 -----------------------------------------------------------------*/
@@ -413,6 +413,7 @@ ol.comment-list {
 /*--------------------------------------------------------------
 11.0 Search
 --------------------------------------------------------------*/
+
 .search-highlight {
     background:#FFFF00;  
 }
@@ -423,9 +424,11 @@ ol.comment-list {
 .search .edit-link {
 	margin-left:10px;
 }
+
 /*--------------------------------------------------------------
 12.0 Asides
 --------------------------------------------------------------*/
+
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
 	display: none;
@@ -434,6 +437,7 @@ ol.comment-list {
 /*--------------------------------------------------------------
 13.0 Infinite scroll
 --------------------------------------------------------------*/
+
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
@@ -447,15 +451,18 @@ ol.comment-list {
 /*--------------------------------------------------------------
 14.0 Alignments
 --------------------------------------------------------------*/
+
 .alignleft {
 	display: inline;
 	float: left;
 	margin-right: 1.5em;
+	margin-bottom: 1.5em;
 }
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.5em;
+	margin-bottom: 1.5em;
 }
 .aligncenter {
 	clear: both;
@@ -466,6 +473,7 @@ ol.comment-list {
 /*--------------------------------------------------------------
 15.0 Media
 --------------------------------------------------------------*/
+
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -482,10 +490,12 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
 /*--------------------------------------------------------------
 Video embed fix
 use <div class="video-frame">embed code</div>
 --------------------------------------------------------------*/
+
 .video-frame {
     height: 0;
     overflow: hidden;
@@ -503,6 +513,7 @@ use <div class="video-frame">embed code</div>
     top: 0;
     width: 100%;
 }
+
 /*--------------------------------------------------------------
 16.0 Captions
 --------------------------------------------------------------*/

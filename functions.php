@@ -219,7 +219,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load Bootstrap Menu.
  */
-require get_template_directory() . '/inc/bootstrap-walker.php';
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 /**
  * Comments Callback.

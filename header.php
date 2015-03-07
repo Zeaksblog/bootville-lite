@@ -75,17 +75,14 @@
 					<div class="navbar-collapse collapse navbar-responsive-collapse">
 						<?php
 
-						$args = array(
+						wp_nav_menu( array(
 							'theme_location' => 'primary',
 							'depth'      => 2,
 							'container'  => false,
 							'menu_class'     => 'nav navbar-nav',
-							'walker'     => new Bootstrap_Walker_Nav_Menu()
-							);
-
-						if (has_nav_menu('primary')) {
-							wp_nav_menu($args);
-						}
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker())
+						);
 
 						?>
 					</div>
