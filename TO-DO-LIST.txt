@@ -1,14 +1,13 @@
-Bootville Base things to fix
+Bootville Lite things to fix
 
-Add CSS to editor style
 Finish Theme Info Page, add recommended plugins list
 Check styles of all default widgets and Jetpack subscribe widget
 Check issues when using child theme and parent style sheet load order
 Run speed test and minify javascripts and admin styles
 Add remaining social icons for social menu
 Write FAQ for child themes, slider setup and shortcodes
-Add theme tags to stylesheet
-Add Powered By and put footer menu on top level under widgets
+
+
 
 
 Finished
@@ -17,3 +16,6 @@ Finished
 ---Run theme test data (mostly for image alignment
 ---Complete contact template
 ---Add contact sidebar files
+---Add theme tags to stylesheet
+---Add Powered By and put footer menu on top level under widgets
+---Add CSS to editor style
