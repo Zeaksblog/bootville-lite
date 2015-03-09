@@ -54,10 +54,11 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 	 */
 	add_theme_support('post-thumbnails');
 	
-	// Add featured image sizes
+	// Add featured image size, also used for portfolio single page
 	add_image_size( 'featured-large', 712, 9999 ); // width, height, crop
 	//Optional Slider image size
 	add_image_size('slider', 1062, 350, true);
+
 
 // This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(

@@ -36,7 +36,7 @@ function bootville_lite_admin() { ?>
 	<div class="wrap upgrade-wrap">
 		<h2 class="headline"><?php echo sprintf( __( 'Upgrade to the Full-Featured Version of %1$s!', 'bootville_lite' ), BOOTVILLE_FULL_NAME ); ?></h2>
 		<p>
-			<?php echo sprintf(__( 'You are currently using the <strong>FREE</strong> version of %1$s. Upgrade to the full-featured version of %1$s for more options, <strong>full bbPress support</strong>, more color schemes, full support for one of the best e-commerce solutions for WordPress, <strong>Easy Digital Downloads</strong>, and more!', 'bootville_lite' ), BOOTVILLE_FULL_NAME	); 
+			<?php echo sprintf(__( 'You are currently using the <strong>FREE</strong> version of %1$s. Upgrade to the full-featured version of %1$s for more options, <strong>Homepage Template with dragon and drop layout editor </strong>, more color schemes, Sortable Portfolio Template, 200+ Google fonts and typography options, sidebar layouts, and more!', 'bootville_lite' ), BOOTVILLE_FULL_NAME	); 
 			?>
 		</p>
 		<p><a class="cta-button" href="http://zeaks.org/downloads/bootville/" target="_blank"><?php echo sprintf(__( 'View the Full Version of %1$s', 'bootville_lite' ), BOOTVILLE_FULL_NAME ); ?></a></p>
@@ -55,8 +55,8 @@ function bootville_lite_admin() { ?>
 		<div class="wrap child-theme-wrap">
 			<h2 class="headline"><?php echo sprintf( __( 'How to Create a Child Theme for %1$s', 'bootville_lite' ), BOOTVILLE_LITE_NAME ); ?></h2>
 			<ol>
-				<li><?php _e( 'Through FTP, navigate to <code>your_website/wp-content/themes/</code> and in that directory, create a new folder as the name of your child theme. Something like <code>bootville-lite-child</code> is perfectly fine.', 'bootville_lite' ); ?></li>
-				<li><?php _e( 'Inside of your new folder, create a file called <code>style.css</code> (the name is NOT optional).', 'bootville_lite' ); ?></li>
+				<li><?php _e( 'Through FTP, navigate to <code>your_website/wp-content/themes/</code> and in that directory, create a new folder using the name of your child theme. Example: <code>bootville-lite-child</code>.', 'bootville_lite' ); ?></li>
+				<li><?php _e( 'Inside of your new folder, create a file called <code>style.css</code>.', 'bootville_lite' ); ?></li>
 				<li><?php _e( 'Inside of your new <code>style.css</code> file, add the following CSS:', 'bootville_lite' ); ?>
 				
 <pre class="bootville-pre">
@@ -75,10 +75,10 @@ Theme customization starts here
 --------------------------------------------------------------*/
 </pre>
 				</li>
-				<li><?php _e( 'You may edit all of what you pasted EXCEPT for the <code>Template</code> line as well as the <code>@import</code> line. Leave those two lines alone or the child theme will not work properly.', 'bootville_lite' ); ?></li>
-				<li><?php _e( 'With your new child theme folder in place and the above CSS pasted inside of your <code>style.css</code> file, go back to your WordPress dashboard and navigate to "Appearance -> Themes" and locate your new theme (you\'ll see the name you chose). Activate your theme.', 'bootville_lite' ); ?></li>
+				<li><?php _e( 'You may edit all of the above code EXCEPT for the <code>Template</code> line as well and the <code>@import</code> line. The template line tells your child theme what parent theme templates to use, the @import line tells your child theme what stylesheet to use as a base.', 'bootville_lite' ); ?></li>
+				<li><?php _e( 'With your new child theme folder in place and the above CSS pasted inside of your <code>style.css</code> file, go back to your WordPress dashboard and navigate to "Appearance -> Themes" and locate your new theme. Activate your new child theme.', 'bootville_lite' ); ?></li>
 				<li><?php _e( 'With your child theme activated, you can edit its stylesheet all you like. You may also create a <code>functions.php</code> file in the root of your child theme to add custom PHP.', 'bootville_lite' ); ?></li>
-				<li><?php _e( 'Enjoy!', 'bootville_lite' ); ?></li>
+				<li><?php _e( 'For questions on modifying your theme and other Bootville resources please visit <a href="http://zeaks.org" target="_blank">http://zeaks.org</a>', 'bootville_lite' ); ?></li>
 			</ol>
 		</div>
 		
