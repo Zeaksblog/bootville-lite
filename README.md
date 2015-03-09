@@ -16,3 +16,5 @@ Bootville lite is a clean responsive WordPress theme created with Underscores st
 - GPL 2 licensed
 
 Visit http://zeaks.org for questions on modifying and other Bootville resources.
+
+![Screenshot](screenshot.png)
