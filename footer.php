@@ -10,7 +10,7 @@
 
 	</div><!-- #content -->
 	<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="footer-widgets row">
+			<div class="footer-widgets widget-area row">
 				<div class="col-lg-4 col-md-4">
 					<?php dynamic_sidebar( 'footer-1' ); ?>
 				</div>

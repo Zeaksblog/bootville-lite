@@ -7,7 +7,6 @@
 
 get_header(); ?>
 
-<div class="container">
 	<div class="row">
 
 	<div id="primary" class="col-md-12 col-lg-12">

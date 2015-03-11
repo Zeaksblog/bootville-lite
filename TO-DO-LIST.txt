@@ -6,6 +6,9 @@ Check issues when using child theme and parent style sheet load order
 Run speed test and minify javascripts and admin styles
 Add remaining social icons for social menu
 Write FAQ for child themes, slider setup and shortcodes
+Check 404 page search form is breaking container
+
+Style forms and elements, check widgets
 
 
 

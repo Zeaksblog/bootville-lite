@@ -56,7 +56,7 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 	
 	// Add featured image size, also used for portfolio single page
 	add_image_size( 'featured-large', 712, 9999 ); // width, height, crop
-	//Optional Slider image size
+	//Optional Slider image size https://wordpress.org/plugins/cpt-bootstrap-carousel/
 	add_image_size('slider', 1062, 350, true);
 
 
@@ -99,7 +99,7 @@ add_action( 'after_setup_theme', 'bootville_setup' );
  */
 	
 function bootville_widgets_init() {
-	// Default sidebar
+	// default sidebar
 	register_sidebar( array(
 		'name'          => __( 'Default Sidebar', 'bootville' ),
 		'id'            => 'sidebar-1',
@@ -107,9 +107,9 @@ function bootville_widgets_init() {
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="panel-heading"><h4 class="widget-title panel-title">',
-		'after_title'   => '</h4></div>',
+		'after_title'   => '</h4></div><div class="panel-body">',
 	) );
-
+	
 	// contact page sidebar widget area
 	register_sidebar( array(
 		'name'          => __( 'Contact Template Sidebar', 'bootville' ),
@@ -118,35 +118,36 @@ function bootville_widgets_init() {
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="panel-heading"><h4 class="widget-title panel-title">',
-		'after_title'   => '</h4></div>',
+		'after_title'   => '</h4></div><div class="panel-body">',
 	) );
-	
-  register_sidebar(array(
+
+	// footer widgets
+	register_sidebar(array(
 		'name'          => __( 'Footer 1', 'bootville' ),
 		'id'            => 'footer-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="panel-heading"><h4 class="widget-title panel-title">',
-		'after_title'   => '</h4></div>',
-  ) );
- 
-  register_sidebar(array(
+		'after_title'   => '</h4></div><div class="panel-body">',
+	) );
+
+	register_sidebar(array(
 		'name'          => __( 'Footer 2', 'bootville' ),
 		'id'            => 'footer-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="panel-heading"><h4 class="widget-title panel-title">',
-		'after_title'   => '</h4></div>',
-  ) );
- 
-  register_sidebar(array(
+		'after_title'   => '</h4></div><div class="panel-body">',
+	) );
+
+	register_sidebar(array(
 		'name'          => __( 'Footer 3', 'bootville' ),
 		'id'            => 'footer-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<div class="panel-heading"><h4 class="widget-title panel-title">',
-		'after_title'   => '</h4></div>',
-  ) );	
+		'after_title'   => '</h4></div><div class="panel-body">',
+	) );	
 }
 add_action( 'widgets_init', 'bootville_widgets_init' );
 
@@ -159,7 +160,7 @@ function bootville_scripts() {
 	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.2.0', 'all' );	
 	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.2.0', 'all' );
 	
-	// Optional bootswatch styles can be loaded here. Load them before the main stylesheet to achieve the desired look
+	// Optional bootswatch styles can be loaded here. Load them before the main stylesheet to achieve the theme intended look
 	//wp_enqueue_style( 'bootswatch-style', get_template_directory_uri() . '/css/cosmo.min.css', array(), '1.0.0', 'all' );
 	
 	wp_enqueue_style( 'bootville-style', get_stylesheet_uri() );
