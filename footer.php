@@ -54,7 +54,7 @@
 				<div class="site-info">
 
 					<!-- Theme credits -->
-					<a href="<?php echo esc_url( __( 'http://zeaks.org/bootville-lite/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Bootville Lite', 'bootville' ); ?>"> <?php printf( 'Bootville Lite', 'bootville' ); ?></a>
+					<a href="<?php echo esc_url( __( 'http://www.themes.zeaks.org/themes/bootville-lite/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Bootville Lite', 'bootville' ); ?>"> <?php printf( 'Bootville Lite', 'bootville' ); ?></a>
 					<?php printf( 'Theme ', 'bootville' ); ?> 
 					
 					<!-- WordPress credits -->

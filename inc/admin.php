@@ -39,8 +39,8 @@ function bootville_lite_admin() { ?>
 			<?php echo sprintf(__( 'You are currently using the <strong>LITE</strong> version of %1$s. Upgrade to the full-featured version of %1$s for more options, <strong>Homepage Template with drag and drop layout editor </strong>, more color schemes, Sortable Portfolio Template, 200+ Google fonts, typography options, sidebar layouts, and more!', 'bootville_lite' ), BOOTVILLE_FULL_NAME	); 
 			?>
 		</p>
-		<p><a class="cta-button" href="http://www.themes.zeaks.org/portfolio/bootville-lite/" target="_blank"><?php echo sprintf(__( 'View the Full Version of %1$s', 'bootville_lite' ), BOOTVILLE_FULL_NAME ); ?></a></p>
-		<p><?php echo BOOTVILLE_LITE_NAME . __( ' users get 20% off by using Coupon Code: <strong>LITE20</strong> at checkout.', 'bootville_lite' ); ?></p>
+		<p><a class="cta-button" href="http://www.themes.zeaks.org/themes/bootville" target="_blank"><?php echo sprintf(__( 'View the Full Version of %1$s', 'bootville_lite' ), BOOTVILLE_FULL_NAME ); ?></a></p>
+		<p><?php echo BOOTVILLE_LITE_NAME . __( ' users get 25% off by using Coupon Code: <strong>LITE25</strong> at checkout.', 'bootville_lite' ); ?></p>
 		<div class="screenshot">
 			<img class="bootville-screenshot" src="<?php echo BOOTVILLE_IMG . 'bootville-full.png'; ?>" alt="Bootville">
 		</div>
