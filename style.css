@@ -157,7 +157,12 @@ body { background: #eaeaea; }
 .entry-header {
 	padding-bottom: 15px;
 }
-
+/* Jumbotron page template */
+@media screen and (min-width: 768px) {
+	.jumbotron {
+		padding-bottom: 25px;
+	}
+}
 /*-------------------------------------------------------------
 5.0 Author Info Box
 --------------------------------------------------------------*/
@@ -376,7 +381,6 @@ ol.comment-list {
 	line-height: 42px;
 	text-align: center;
 	color: #FFF;
-	--color: rgba(255, 255, 255, 0.8);
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
@@ -419,18 +423,18 @@ ol.comment-list {
 #menu-social li a[href*="twitter.com"]:before { content: "\f099"; }
 
 #menu-social li a[href*="github.com"] { background: #070709;}
-#menu-social li  a[href*="github.com"]:before { content: "\f09b"; }
+#menu-social li a[href*="github.com"]:before { content: "\f09b"; }
 
 #menu-social li a[href*="mailto:"] { background: #98c9ea; }
 #menu-social li a[href*="mailto:"]:before { content: "\f0e0";}
 
 #menu-social li a[href*="wordpress.com"] { background: #aaa;}
-#menu-social li  a[href*="wordpress.com"]:before { content: "\f19a"; }
+#menu-social li a[href*="wordpress.com"]:before { content: "\f19a"; }
 
 #menu-social li a[href*="facebook.com"] { background:#3C599F;}
-#menu-social li  a[href*="facebook.com"]:before { content: "\f09a"; }
+#menu-social li a[href*="facebook.com"]:before { content: "\f09a"; }
 
-#menu-social li a[href*="youtube.com"] { background: #C52F30; }
+#menu-social li a[href*="youtube.com"] { background:#C52F30;}
 #menu-social li a[href*="youtube.com"]:before { content: "\f167"; }
 
 /*--------------------------------------------------------------
@@ -661,9 +665,13 @@ use <div class="video-frame">embed code</div>
 @media only screen and (min-width : 1200px) {
 
 }
-/*-------------------------------------------------------------
+/*--------------------------------------------------------------------------
 19.0 Custom CSS and Plugin Styles
---------------------------------------------------------------*/
+
+
+These styles are optional
+If you want the original bbPress look feel, free to remove anything below
+-----------------------------------------------------------------------------*/
 
 /*==================== bbPress Styles =======================*/
 .bbp-login-form .bbp-username, .bbp-login-form .bbp-email, .bbp-login-form .bbp-password, .bbp-login-form .bbp-remember-me, .bbp-login-form .bbp-submit-wrapper {
@@ -810,4 +818,11 @@ div.bbp-breadcrumb { font-size: 24px; }
 }
 .bbp-logged-in {
 	padding: 10px;
+}
+/* hide breadcrumb home link */
+#bbpress-forums div.bbp-breadcrumb a.bbp-breadcrumb-home,
+#bbpress-forums div.bbp-breadcrumb a.bbp-breadcrumb-home +
+.bbp-breadcrumb-sep
+{
+    display:none;
 }

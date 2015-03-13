@@ -6,9 +6,10 @@ Check issues when using child theme and parent style sheet load order
 Run speed test and minify javascripts and admin styles
 Add remaining social icons for social menu
 Write FAQ for child themes, slider setup and shortcodes
-Check 404 page search form is breaking container
 
-Style forms and elements, check widgets
+Check li,ul font size and line height
+
+
 
 
 
@@ -22,3 +23,5 @@ Finished
 ---Add theme tags to stylesheet
 ---Add Powered By and put footer menu on top level under widgets
 ---Add CSS to editor style
+---Style forms and elements, check widgets
+---Check 404 page search form is breaking container
