@@ -18,15 +18,15 @@ function bootville_paging_nav() {
 	}
 	?>
 	<nav class="navigation paging-navigation" role="navigation">
-		<h1 class="sr-only"><?php _e( 'Posts navigation', 'bootville' ); ?></h1>
+		<h1 class="sr-only"><?php _e( 'Posts navigation', 'bootville-lite' ); ?></h1>
 		<ul class="pager">
 
 			<?php if ( get_next_posts_link() ) : ?>
-			<li class="previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'bootville' ) ); ?></li>
+			<li class="previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'bootville-lite' ) ); ?></li>
 			<?php endif; ?>
 
 			<?php if ( get_previous_posts_link() ) : ?>
-			<li class="next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'bootville' ) ); ?></li>
+			<li class="next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'bootville-lite' ) ); ?></li>
 			<?php endif; ?>
 
 		</ul><!-- .nav-links -->
@@ -49,11 +49,11 @@ function bootville_post_nav() {
 	}
 	?>
 	<nav class="navigation post-navigation" role="navigation">
-		<h1 class="sr-only"><?php _e( 'Post navigation', 'bootville' ); ?></h1>
+		<h1 class="sr-only"><?php _e( 'Post navigation', 'bootville-lite' ); ?></h1>
 		<ul class="pager">
 			<?php
-				previous_post_link( '<li class="previous">%link</li>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'bootville' ) );
-				next_post_link(     '<li class="next">%link</li>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'bootville' ) );
+				previous_post_link( '<li class="previous">%link</li>', _x( '<span class="meta-nav">&larr;</span>&nbsp;%title', 'Previous post link', 'bootville-lite' ) );
+				next_post_link(     '<li class="next">%link</li>',     _x( '%title&nbsp;<span class="meta-nav">&rarr;</span>', 'Next post link',     'bootville-lite' ) );
 			?>
 		</ul><!-- .nav-links -->
 	</nav><!-- .navigation -->
@@ -79,12 +79,12 @@ function bootville_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( '<i class="fa fa-clock-o"></i> %s', 'post date', 'bootville' ),
+		_x( '<i class="fa fa-clock-o"></i> %s', 'post date', 'bootville-lite' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
 	$byline = sprintf(
-		_x( '<i class="fa fa-user"></i> %s', 'post author', 'bootville' ),
+		_x( '<i class="fa fa-user"></i> %s', 'post author', 'bootville-lite' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
@@ -101,25 +101,25 @@ function bootville_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' == get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( __( ', ', 'bootville' ) );
+		$categories_list = get_the_category_list( __( ', ', 'bootville-lite' ) );
 		if ( $categories_list && bootville_categorized_blog() ) {
-			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'bootville' ) . '</span>', $categories_list );
+			printf( '<span class="cat-links">' . __( 'Posted in %1$s', 'bootville-lite' ) . '</span>', $categories_list );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ', ', 'bootville' ) );
+		$tags_list = get_the_tag_list( '', __( ', ', 'bootville-lite' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'bootville' ) . '</span>', $tags_list );
+			printf( '<span class="tags-links">' . __( 'Tagged %1$s', 'bootville-lite' ) . '</span>', $tags_list );
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 		echo '<span class="comments-link">';
-		comments_popup_link( __( 'Leave a comment', 'bootville' ), __( '1 Comment', 'bootville' ), __( '% Comments', 'bootville' ) );
+		comments_popup_link( __( 'Leave a comment', 'bootville-lite' ), __( '1 Comment', 'bootville-lite' ), __( '% Comments', 'bootville-lite' ) );
 		echo '</span>';
 	}
 
-	edit_post_link( __( 'Edit', 'bootville' ), '<span class="edit-link">', '</span>' );
+	edit_post_link( __( 'Edit', 'bootville-lite' ), '<span class="edit-link">', '</span>' );
 }
 endif;
 

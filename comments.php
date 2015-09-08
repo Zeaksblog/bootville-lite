@@ -25,16 +25,16 @@ if ( post_password_required() ) {
 	<?php if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
-				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'bootville' ),
+				printf( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'bootville-lite' ),
 					number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
 		</h2>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'bootville' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'bootville' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'bootville' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'bootville-lite' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'bootville-lite' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'bootville-lite' ) ); ?></div>
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // check for comment navigation ?>
 
@@ -50,9 +50,9 @@ if ( post_password_required() ) {
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below" class="comment-navigation" role="navigation">
-			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'bootville' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'bootville' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'bootville' ) ); ?></div>
+			<h1 class="screen-reader-text"><?php _e( 'Comment navigation', 'bootville-lite' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'bootville-lite' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'bootville-lite' ) ); ?></div>
 		</nav><!-- #comment-nav-below -->
 		<?php endif; // check for comment navigation ?>
 
@@ -62,7 +62,7 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && '0' != get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Comments are closed.', 'bootville' ); ?></p>
+		<p class="no-comments"><?php _e( 'Comments are closed.', 'bootville-lite' ); ?></p>
 	<?php endif; ?>
 
 		<?php 
@@ -77,26 +77,26 @@ if ( post_password_required() ) {
         // remove "Text or HTML to be displayed after the set of comment fields"
         'comment_notes_after' => '',
         // redefine your own textarea (the comment body)
-        'comment_field' => ' <div class="form-group"><label for="comment">' . _x( 'Comment', 'bootville' ) . '</label><textarea class="form-control" rows="10" id="comment" name="comment" aria-required="true"></textarea></div>',
+        'comment_field' => ' <div class="form-group"><label for="comment">' . _x( 'Comment', 'bootville-lite' ) . '</label><textarea class="form-control" rows="10" id="comment" name="comment" aria-required="true"></textarea></div>',
 
         'fields' => apply_filters( 'comment_form_default_fields', array(
 
 	    'author' =>
 	      '<div class="form-group">' .
-	      '<label for="author">' . __( 'Name', 'bootville' ) . '</label> ' .
+	      '<label for="author">' . __( 'Name', 'bootville-lite' ) . '</label> ' .
 	      ( $req ? '<span class="required">*</span>' : '' ) .
 	      '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
 	      '" size="30"' . $aria_req . ' /></div>',
 
 	    'email' =>
-	      '<div class="form-group"><label for="email">' . __( 'Email', 'bootville' ) . '</label> ' .
+	      '<div class="form-group"><label for="email">' . __( 'Email', 'bootville-lite' ) . '</label> ' .
 	      ( $req ? '<span class="required">*</span>' : '' ) .
 	      '<input class="form-control" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
 	      '" size="30"' . $aria_req . ' /></div>',
 
 	    'url' =>
 	      '<div class="form-group"><label for="url">' .
-	      __( 'Website', 'bootville' ) . '</label>' .
+	      __( 'Website', 'bootville-lite' ) . '</label>' .
 	      '<input class="form-control" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
 	      '" size="30" /></div>'
 	    )

@@ -20,9 +20,9 @@ function bootville_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on bootville, use a find and replace
-	 * to change 'bootville' to the name of your theme in all the template files
+	 * to change 'bootville-lite' to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'bootville', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'bootville-lite', get_template_directory() . '/languages' );
 
 
 	/**
@@ -62,9 +62,9 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 
 // This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'bootville' ),
-		'footer-menu' => __( 'Footer Menu', 'bootville' ),	
-		'social'  => __( 'Social Links Menu', 'bootville' ),
+		'primary' => __( 'Primary Menu', 'bootville-lite' ),
+		'footer-menu' => __( 'Footer Menu', 'bootville-lite' ),	
+		'social'  => __( 'Social Links Menu', 'bootville-lite' ),
 	) );
 	
 	/*
@@ -101,7 +101,7 @@ add_action( 'after_setup_theme', 'bootville_setup' );
 function bootville_widgets_init() {
 	// default sidebar
 	register_sidebar( array(
-		'name'          => __( 'Default Sidebar', 'bootville' ),
+		'name'          => __( 'Default Sidebar', 'bootville-lite' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
@@ -112,7 +112,7 @@ function bootville_widgets_init() {
 	
 	// contact page sidebar widget area
 	register_sidebar( array(
-		'name'          => __( 'Contact Template Sidebar', 'bootville' ),
+		'name'          => __( 'Contact Template Sidebar', 'bootville-lite' ),
 		'id'            => 'contact',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
@@ -123,7 +123,7 @@ function bootville_widgets_init() {
 
 	// footer widgets
 	register_sidebar(array(
-		'name'          => __( 'Footer 1', 'bootville' ),
+		'name'          => __( 'Footer 1', 'bootville-lite' ),
 		'id'            => 'footer-1',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
@@ -132,7 +132,7 @@ function bootville_widgets_init() {
 	) );
 
 	register_sidebar(array(
-		'name'          => __( 'Footer 2', 'bootville' ),
+		'name'          => __( 'Footer 2', 'bootville-lite' ),
 		'id'            => 'footer-2',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
@@ -141,7 +141,7 @@ function bootville_widgets_init() {
 	) );
 
 	register_sidebar(array(
-		'name'          => __( 'Footer 3', 'bootville' ),
+		'name'          => __( 'Footer 3', 'bootville-lite' ),
 		'id'            => 'footer-3',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',

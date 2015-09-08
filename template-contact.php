@@ -42,9 +42,9 @@ if(isset($_POST['submitted'])) {
         if (!isset($emailTo) || ($emailTo == '') ){
             $emailTo = get_option('admin_email');
         }
-        $subject = __('From ','bootville').$name;
-        $body = __('Name: ','bootville').$name."\n".__('Email: ','bootville').$email."\n".__('Comments: ','bootville').$comments;
-        $headers = __('From: ','bootville') .$name. ' <'.$emailTo.'>' . "\r\n" . __('Reply-To:','bootville') .$name. '<'.$email.'>';
+        $subject = __('From ','bootville-lite').$name;
+        $body = __('Name: ','bootville-lite').$name."\n".__('Email: ','bootville-lite').$email."\n".__('Comments: ','bootville-lite').$comments;
+        $headers = __('From: ','bootville-lite') .$name. ' <'.$emailTo.'>' . "\r\n" . __('Reply-To:','bootville-lite') .$name. '<'.$email.'>';
 
         wp_mail($emailTo, $subject, $body, $headers);
         $emailSent = true;
@@ -75,20 +75,20 @@ get_header(); ?>
 
 				          <?php if(isset($emailSent) && $emailSent == true) { ?>
 				                <div class="alert alert-success" role="alert">
-				                    <p><?php _e('Thanks, your email was sent successfully.', 'bootville'); ?></p>
+				                    <p><?php _e('Thanks, your email was sent successfully.', 'bootville-lite'); ?></p>
 				                </div>
 				            <?php } else { ?>
 
 				                <?php if(isset($hasError) || isset($captchaError)) { ?>
 				                    <div class="alert alert-danger alert-dismissible" role="alert">
 									  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-									  <strong><?php _e('Error!', 'bootville'); ?></strong> <?php _e('Please try again.', 'bootville'); ?>
+									  <strong><?php _e('Error!', 'bootville-lite'); ?></strong> <?php _e('Please try again.', 'bootville-lite'); ?>
 									</div>
 				                <?php } ?>
 
 						        <form action="<?php the_permalink(); ?>" id="contactForm" method="post">
 						            <div class="form-group <?php if(isset($nameError)) { echo "has-error has-feedback"; }?>">
-						                    <label class="control-label" for="contactName"><?php _e('Name', 'bootville'); ?></label>
+						                    <label class="control-label" for="contactName"><?php _e('Name', 'bootville-lite'); ?></label>
 						                    <input class="form-control" type="text" name="contactName" id="contactName" value="" />
 						                    <?php if(isset($nameError)) { ?>
 						                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
@@ -96,7 +96,7 @@ get_header(); ?>
 						              
 						               </div>
 						               <div class="form-group <?php if(isset($emailError)) { echo "has-error has-feedback"; }?>">
-						                    <label class="control-label" for="email"><?php _e('Email', 'bootville'); ?></label>
+						                    <label class="control-label" for="email"><?php _e('Email', 'bootville-lite'); ?></label>
 						                
 						                    <input class="form-control" type="text" name="email" id="email" value="" />
 						                    <?php if(isset($emailError)) { ?>
@@ -105,7 +105,7 @@ get_header(); ?>
 						               
 						               </div>
 						                <div class="form-group <?php if(isset($commentError)) { echo "has-error has-feedback"; }?>">
-						                    <label class="control-label" for="commentsText"><?php _e('Message', 'bootville'); ?></label>
+						                    <label class="control-label" for="commentsText"><?php _e('Message', 'bootville-lite'); ?></label>
 						               
 						                    <textarea class="form-control" name="comments" id="commentsText" rows="10" cols="20"></textarea>
 						                     <?php if(isset($commentError)) { ?>
@@ -114,7 +114,7 @@ get_header(); ?>
 						                
 						               </div>
 						               <div class="form-actions">
-						                    <button type="submit" class="btn btn-primary"><?php _e('Send Email', 'bootville'); ?></button>
+						                    <button type="submit" class="btn btn-primary"><?php _e('Send Email', 'bootville-lite'); ?></button>
 						                    <input type="hidden" name="submitted" id="submitted" value="true" />
 						               </div>
 						        </form>
@@ -123,13 +123,13 @@ get_header(); ?>
 				                    
 						<?php
 							wp_link_pages( array(
-								'before' => '<div class="page-links">' . __( 'Pages:', 'bootville' ),
+								'before' => '<div class="page-links">' . __( 'Pages:', 'bootville-lite' ),
 								'after'  => '</div>',
 							) );
 						?>
 					</div><!-- .entry-content -->
 					<footer class="entry-footer">
-						<?php edit_post_link( __( 'Edit', 'bootville' ), '<span class="edit-link">', '</span>' ); ?>
+						<?php edit_post_link( __( 'Edit', 'bootville-lite' ), '<span class="edit-link">', '</span>' ); ?>
 					</footer><!-- .entry-footer -->
 				</article><!-- #post-## -->
 

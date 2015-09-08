@@ -16,7 +16,7 @@ function bootville_comment( $comment, $args, $depth ) {
 		// Display trackbacks differently than normal comments.
 	?>
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
-		<p><?php _e( 'Pingback:', 'bootville' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'bootville' ), '<span class="ping-meta"><span class="edit-link">', '</span></span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'bootville-lite' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'bootville-lite' ), '<span class="ping-meta"><span class="edit-link">', '</span></span>' ); ?></p>
 	<?php
 			break;
 		default :
@@ -39,14 +39,14 @@ function bootville_comment( $comment, $args, $depth ) {
                         printf( '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
                             esc_url( get_comment_link( $comment->comment_ID ) ),
                             get_comment_time( 'c' ),
-                            sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'bootville' ), get_comment_date(), get_comment_time() )
+                            sprintf( _x( '%1$s at %2$s', '1: date, 2: time', 'bootville-lite' ), get_comment_date(), get_comment_time() )
                         );
-                        edit_comment_link( __( 'Edit', 'bootville' ), ' <span class="edit-link">', '<span>' ); ?>
+                        edit_comment_link( __( 'Edit', 'bootville-lite' ), ' <span class="edit-link">', '<span>' ); ?>
                     </div><!-- .comment-date -->
                 </header><!-- .comment-meta -->
     
                 <?php if ( '0' == $comment->comment_approved ) : ?>
-                    <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'bootville' ); ?></p>
+                    <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'bootville-lite' ); ?></p>
                 <?php endif; ?>
     
                 <div class="comment-content">
@@ -54,7 +54,7 @@ function bootville_comment( $comment, $args, $depth ) {
                 </div><!-- .comment-content -->
     
                 <div class="reply">
-                    <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'reply to comment', 'bootville' ) . ' &rarr;', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
+                    <?php comment_reply_link( array_merge( $args, array( 'reply_text' => __( 'reply to comment', 'bootville-lite' ) . ' &rarr;', 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
                 </div><!-- .reply -->
                 
             </div><!-- .comment-details -->

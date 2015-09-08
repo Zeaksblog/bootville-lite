@@ -27,7 +27,7 @@
 			<div class="row">
 				<div class="footer-menu">
 						<div class="col-lg-12 col-md-12">
-							<?php if (has_nav_menu('footer-menu', 'bootville')) { ?>
+							<?php if (has_nav_menu('footer-menu', 'bootville-lite')) { ?>
 								<nav role="navigation">
 								<?php wp_nav_menu(array(
 								  'container'       => '',
@@ -46,7 +46,7 @@
 		
 			<div class="col-md-6 col-lg-6 col-lg-push-6">
 			<div class="copyright">
-				<p class="copyright">&copy; <?php _e('Copyright', 'bootville'); ?> <?php echo date('Y'); ?> - <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
+				<p class="copyright">&copy; <?php _e('Copyright', 'bootville-lite'); ?> <?php echo date('Y'); ?> - <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?>" rel="home"><?php bloginfo('name'); ?></a></p>
 			</div>
 			</div>
 			
@@ -54,11 +54,11 @@
 				<div class="site-info">
 
 					<!-- Theme credits -->
-					<a href="<?php echo esc_url( __( 'http://www.themes.zeaks.org/themes/bootville-lite/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Bootville Lite', 'bootville' ); ?>"> <?php printf( 'Bootville Lite', 'bootville' ); ?></a>
-					<?php printf( 'Theme ', 'bootville' ); ?> 
+					<a href="<?php echo esc_url( __( 'http://www.themes.zeaks.org/themes/bootville-lite/', 'bootville-lite' ) ); ?>" title="<?php esc_attr_e( 'Bootville Lite', 'bootville-lite' ); ?>"> <?php printf( 'Bootville Lite', 'bootville-lite' ); ?></a>
+					<?php printf( 'Theme ', 'bootville-lite' ); ?> 
 					
 					<!-- WordPress credits -->
-					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'bootville' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'bootville' ); ?>"><?php printf( __( 'Powered by %s', 'bootville' ), 'WordPress' ); ?></a>
+					<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'bootville-lite' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'bootville-lite' ); ?>"><?php printf( __( 'Powered by %s', 'bootville-lite' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->	
 			</div>	
 			</div><!-- .credits -->
