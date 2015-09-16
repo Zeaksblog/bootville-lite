@@ -39,7 +39,7 @@ if ( post_password_required() ) {
 		<?php endif; // check for comment navigation ?>
 
 		<ol class="comment-list">
-<?php
+			<?php
 				wp_list_comments( array(
 					'style'       => 'ol',
 					'short_ping'  => true,
@@ -72,6 +72,8 @@ if ( post_password_required() ) {
 		$comments_args = array(
         // change the title of send button 
         'label_submit'=>'Submit',
+		// add bootstrap btn class to submit button
+		'class_submit'=>'btn btn-primary',
         // change the title of the reply section
         'title_reply'=>'Leave a Comment',
         // remove "Text or HTML to be displayed after the set of comment fields"
