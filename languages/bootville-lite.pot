@@ -1,122 +1,67 @@
-# Copyright (C) 2014 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: _s 1.0-wpcom\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2014-09-11 00:43:48+00:00\n"
+"Project-Id-Version: bootville-lite\n"
+"POT-Creation-Date: 2015-10-19 11:26-0400\n"
+"PO-Revision-Date: 2015-10-19 11:28-0400\n"
+"Last-Translator: \n"
+"Language-Team: zeaks <zeaksblog>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:15
+#: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:19
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
 msgstr ""
 
-#: 404.php:27
+#: 404.php:29
 msgid "Most Used Categories"
 msgstr ""
 
 #. translators: %1$s: smiley
-
-#: 404.php:44
+#: 404.php:46
+#, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: archive.php:27
-msgid "Author: %s"
-msgstr ""
-
-#: archive.php:30
-msgid "Day: %s"
-msgstr ""
-
-#: archive.php:33
-msgid "Month: %s"
-msgstr ""
-
-#: archive.php:33
-msgctxt "monthly archives date format"
-msgid "F Y"
-msgstr ""
-
-#: archive.php:36
-msgid "Year: %s"
-msgstr ""
-
-#: archive.php:36
-msgctxt "yearly archives date format"
-msgid "Y"
-msgstr ""
-
-#: archive.php:39
-msgid "Asides"
-msgstr ""
-
-#: archive.php:42
-msgid "Galleries"
-msgstr ""
-
-#: archive.php:45
-msgid "Images"
-msgstr ""
-
-#: archive.php:48
-msgid "Videos"
-msgstr ""
-
-#: archive.php:51
-msgid "Quotes"
-msgstr ""
-
-#: archive.php:54
-msgid "Links"
-msgstr ""
-
-#: archive.php:57
-msgid "Statuses"
-msgstr ""
-
-#: archive.php:60
-msgid "Audios"
-msgstr ""
-
-#: archive.php:63
-msgid "Chats"
-msgstr ""
-
-#: archive.php:66
-msgid "Archives"
-msgstr ""
-
-#: comments.php:28
-msgctxt "comments title"
-msgid "One thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:35 comments.php:52
+#: comments.php:35 comments.php:53
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:36 comments.php:53
+#: comments.php:36 comments.php:54
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: comments.php:37 comments.php:54
+#: comments.php:37 comments.php:55
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:64
+#: comments.php:65
 msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:86
+msgid "Name"
+msgstr ""
+
+#: comments.php:92
+msgid "Email"
+msgstr ""
+
+#: comments.php:99
+msgid "Website"
 msgstr ""
 
 #: content-none.php:13
@@ -124,54 +69,205 @@ msgid "Nothing Found"
 msgstr ""
 
 #: content-none.php:19
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: content-none.php:23
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
 msgstr ""
 
 #: content-none.php:28
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
 msgstr ""
 
-#: content-page.php:18 content-single.php:20 content.php:22
+#: content-page.php:18 content-single.php:62 content.php:53
 msgid "Pages:"
 msgstr ""
 
-#: content-page.php:25 inc/template-tags.php:122
+#: content-page.php:25 content-single.php:69 content.php:60
+#: inc/comments-callback.php:19 inc/comments-callback.php:44
+#: inc/template-tags.php:122
 msgid "Edit"
 msgstr ""
 
-#: content.php:19
+#. translators: used between list items, there is a space after the comma
+#: content.php:19 inc/template-tags.php:104 inc/template-tags.php:110
+msgid ", "
+msgstr ""
+
+#: content.php:23
+#, php-format
+msgid "<i class=\"fa fa-folder-o\"></i> %1$s"
+msgstr ""
+
+#: content.php:29 inc/template-tags.php:118
+msgid "Leave a comment"
+msgstr ""
+
+#: content.php:29 inc/template-tags.php:118
+msgid "1 Comment"
+msgstr ""
+
+#: content.php:29 inc/template-tags.php:118
+msgid "% Comments"
+msgstr ""
+
+#: content.php:49
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: footer.php:15
+#: footer.php:49
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:57
+msgid "http://www.themes.zeaks.org/themes/bootville-lite/"
+msgstr ""
+
+#: footer.php:61
 msgid "http://wordpress.org/"
 msgstr ""
 
-#: footer.php:15
-msgid "Proudly powered by %s"
+#: footer.php:61
+#, php-format
+msgid "Powered by %s"
 msgstr ""
 
-#: footer.php:17
-msgid "Theme: %1$s by %2$s."
-msgstr ""
-
-#: functions.php:45 header.php:32
+#: functions.php:65
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:80
-msgid "Sidebar"
+#: functions.php:66
+msgid "Footer Menu"
 msgstr ""
 
-#: header.php:23
-msgid "Skip to content"
+#: functions.php:67
+msgid "Social Links Menu"
 msgstr ""
 
-#: inc/extras.php:63
+#: functions.php:104
+msgid "Default Sidebar"
+msgstr ""
+
+#: functions.php:115
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:124
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:133
+msgid "Footer 3"
+msgstr ""
+
+#: inc/admin.php:37
+#, php-format
+msgid "Upgrade to the Full-Featured Version of %1$s!"
+msgstr ""
+
+#: inc/admin.php:39
+#, php-format
+msgid ""
+"You are currently using the <strong>LITE</strong> version of %1$s. Upgrade "
+"to the full-featured version of %1$s for more options, <strong>Homepage "
+"Template with drag and drop layout editor </strong>, more color schemes, "
+"Sortable Portfolio Template, 200+ Google fonts, typography options, sidebar "
+"layouts, and more!"
+msgstr ""
+
+#: inc/admin.php:42
+#, php-format
+msgid "View the Full Version of %1$s"
+msgstr ""
+
+#: inc/admin.php:43
+#, php-format
+msgid ""
+" users get 20% off by using Coupon Code: <strong>LITE20</strong> at checkout."
+msgstr ""
+
+#: inc/admin.php:56
+#, php-format
+msgid "How to Create a Child Theme for %1$s"
+msgstr ""
+
+#: inc/admin.php:58
+msgid ""
+"Through FTP, navigate to <code>your_website/wp-content/themes/</code> and in "
+"that directory, create a new folder using the name of your child theme. "
+"Example: <code>bootville-lite-child</code>."
+msgstr ""
+
+#: inc/admin.php:59
+msgid "Inside of your new folder, create a file called <code>style.css</code>."
+msgstr ""
+
+#: inc/admin.php:60
+msgid "Inside of your new <code>style.css</code> file, add the following CSS:"
+msgstr ""
+
+#: inc/admin.php:78
+msgid ""
+"You may edit all of the above code EXCEPT for the <code>Template</code> line "
+"as well and the <code>@import</code> line. The template line tells your "
+"child theme what parent theme templates to use, the @import line tells your "
+"child theme what stylesheet to use as a base."
+msgstr ""
+
+#: inc/admin.php:79
+msgid ""
+"With your new child theme folder in place and the above CSS pasted inside of "
+"your <code>style.css</code> file, go back to your WordPress dashboard and "
+"navigate to \"Appearance -> Themes\" and locate your new theme. Activate "
+"your new child theme."
+msgstr ""
+
+#: inc/admin.php:80
+msgid ""
+"With your child theme activated, you can edit its stylesheet all you like. "
+"You may also create a <code>functions.php</code> file in the root of your "
+"child theme to add custom PHP."
+msgstr ""
+
+#: inc/admin.php:81
+msgid ""
+"Recommended plugins Image Slider: <a href=\"https://wordpress.org/plugins/"
+"cpt-bootstrap-carousel/\" target=\"_blank\">CPT Bootstrap Carousel</a> "
+"Bootstrap Shortcodes: <a href=\"https://wordpress.org/plugins/bootstrap-3-"
+"shortcodes/\" target=\"_blank\">Bootstrap 3 Shortcodes</a>"
+msgstr ""
+
+#: inc/admin.php:82
+msgid ""
+"For questions on modifying your theme and other Bootville resources please "
+"visit <a href=\"http://zeaks.org\" target=\"_blank\">http://zeaks.org</a>"
+msgstr ""
+
+#: inc/breadcrumbs.php:95
+msgid "Page"
+msgstr ""
+
+#: inc/comments-callback.php:19
+msgid "Pingback:"
+msgstr ""
+
+#: inc/comments-callback.php:49
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/comments-callback.php:57
+msgid "reply to comment"
+msgstr ""
+
+#: inc/extras.php:64
+#, php-format
 msgid "Page %s"
 msgstr ""
 
@@ -191,71 +287,21 @@ msgstr ""
 msgid "Post navigation"
 msgstr ""
 
-#: inc/template-tags.php:55
-msgctxt "Previous post link"
-msgid "<span class=\"meta-nav\">&larr;</span>&nbsp;%title"
-msgstr ""
-
-#: inc/template-tags.php:56
-msgctxt "Next post link"
-msgid "%title&nbsp;<span class=\"meta-nav\">&rarr;</span>"
-msgstr ""
-
-#: inc/template-tags.php:82
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr ""
-
-#: inc/template-tags.php:87
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-
-#: inc/template-tags.php:104 inc/template-tags.php:110
-msgid ", "
-msgstr ""
-
 #: inc/template-tags.php:106
+#, php-format
 msgid "Posted in %1$s"
 msgstr ""
 
 #: inc/template-tags.php:112
+#, php-format
 msgid "Tagged %1$s"
 msgstr ""
 
-#: inc/template-tags.php:118
-msgid "Leave a comment"
-msgstr ""
-
-#: inc/template-tags.php:118
-msgid "1 Comment"
-msgstr ""
-
-#: inc/template-tags.php:118
-msgid "% Comments"
-msgstr ""
-
-#: search.php:16
+#: search.php:18
+#, php-format
 msgid "Search Results for: %s"
 msgstr ""
-#. Theme Name of the plugin/theme
-msgid "_s"
-msgstr ""
 
-#. Theme URI of the plugin/theme
-msgid "http://underscores.me/"
-msgstr ""
-
-#. Description of the plugin/theme
-msgid "Hi. I'm a starter theme called <code>_s</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for."
-msgstr ""
-
-#. Author of the plugin/theme
-msgid "Automattic"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "http://automattic.com/"
+#: searchform.php:15
+msgid "Search"
 msgstr ""

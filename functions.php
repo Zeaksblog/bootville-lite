@@ -6,7 +6,7 @@
  */
 
 
-if ( ! function_exists( 'bootville_setup' ) ) :
+if ( ! function_exists( 'bootville_lite_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -14,7 +14,7 @@ if ( ! function_exists( 'bootville_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function bootville_setup() {
+function bootville_lite_setup() {
 
 	/*
 	 * Make theme available for translation.
@@ -55,9 +55,9 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 	add_theme_support('post-thumbnails');
 	
 	// Add featured image size, also used for portfolio single page
-	add_image_size( 'featured-large', 712, 9999 ); // width, height, crop
+	add_image_size( 'bootville-lite-featured-large', 712, 9999 ); // width, height, crop
 	//Optional Slider image size https://wordpress.org/plugins/cpt-bootstrap-carousel/
-	add_image_size('slider', 1062, 350, true);
+	add_image_size('bootville-lite-slider', 1062, 350, true);
 
 
 // This theme uses wp_nav_menu() in one location.
@@ -90,7 +90,7 @@ if ( ! isset( $content_width ) ) $content_width = 712;
 	) ) );
 }
 endif; // bootville_setup
-add_action( 'after_setup_theme', 'bootville_setup' );
+add_action( 'after_setup_theme', 'bootville_lite_setup' );
 
 /**
  * Register widget area.
@@ -103,17 +103,6 @@ function bootville_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Default Sidebar', 'bootville-lite' ),
 		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<div class="panel-heading"><h4 class="widget-title panel-title">',
-		'after_title'   => '</h4></div><div class="panel-body">',
-	) );
-	
-	// contact page sidebar widget area
-	register_sidebar( array(
-		'name'          => __( 'Contact Template Sidebar', 'bootville-lite' ),
-		'id'            => 'contact',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s panel panel-default">',
 		'after_widget'  => '</aside>',
@@ -157,16 +146,16 @@ add_action( 'widgets_init', 'bootville_widgets_init' );
  */
 function bootville_scripts() {
 	
-	wp_enqueue_style( 'bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.2.0', 'all' );	
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.2.0', 'all' );
+	wp_enqueue_style( 'bootville-lite-bootstrap-styles', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.2.0', 'all' );	
+	wp_enqueue_style( 'bootville-lite-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.4.0', 'all' );
 	
 	// Optional bootswatch styles can be loaded here. Load them before the main stylesheet to achieve the theme intended look
-	//wp_enqueue_style( 'bootswatch-style', get_template_directory_uri() . '/css/cosmo.min.css', array(), '1.0.0', 'all' );
+	//wp_enqueue_style( 'bootville-lite-bootswatch-style', get_template_directory_uri() . '/css/BOOTSWATCHSTYLE.css', array(), '1.0.0', 'all' );
 	
-	wp_enqueue_style( 'bootville-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'bootville-lite-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true );
-	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.2.0', true );
+	wp_enqueue_script( 'bootville-lite-main-js', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'bootville-lite-bootstrap-js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.2.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -177,17 +166,18 @@ add_action( 'wp_enqueue_scripts', 'bootville_scripts' );
 /**
  * Add Respond.js for IE
  */
-if( !function_exists('ie_scripts')) {
-	function ie_scripts() {
+if( !function_exists('bootville_lite_ie_scripts')) {
+	function bootville_lite_ie_scripts() {
 	 	echo '<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->';
 	   	echo ' <!-- WARNING: Respond.js doesn\'t work if you view the page via file:// -->';
 	   	echo ' <!--[if lt IE 9]>';
-	    echo ' <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>';
-	    echo ' <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>';
+		echo '<script src="'.get_template_directory_uri().'/js/html5shiv.js"></script>';
+		echo '<script src="'.get_template_directory_uri().'/js/respond.min.js"></script>';
 	   	echo ' <![endif]-->';
    	}
-   	add_action('wp_head', 'ie_scripts');
+   	add_action('wp_head', 'bootville_lite_ie_scripts');
 } // end if
+
 
 /**
  * Implement the Custom Header feature.

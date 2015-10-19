@@ -4,13 +4,13 @@
 
 Theme Name      :   bootville-lite
 Theme URI       :   http://zeaks.org/bootville-lite-free-bootstrap-wordpress-theme
-Version         :   1.0
-Tested up to    :   WP 3.9
+Version         :   1.6
+Tested up to    :   WP 4.3.1
 Author          :   Scott Dixon
 Author URI      :   http://www.zeaks.org/
 
 license         :   GNU General Public License v3.0
-License URI     :   http://www.gnu.org/licenses/gpl.html
+License URI     :   http://www.gnu.org/licenses/gpl-3.0.html
 
 /*-----------------------------------------------------------------------------------*/
 /* About Author - Contact Details */
@@ -23,7 +23,7 @@ website     :   http://zeaks.org
 /* Theme Features */
 /*-----------------------------------------------------------------------------------*/
 
-bootville-lite is a fully responsive wordpress theme which has the following features
+bootville-lite is a fully responsive wordpress theme with the following features
 
 1  = Custom Header.
 2  = Custom Background.
@@ -33,11 +33,11 @@ bootville-lite is a fully responsive wordpress theme which has the following fea
 6  = Threaded Comments.
 7  = Responsive Layout.
 8  = Flexible Layout.
-9  = Full width template
+9  = Full width template.
 10 = Right sidebar.
 11 = Two Columns.
-12 = Font Awesome Social icons menu in header
-13 = Sidebar and Footer Widget Areas
+12 = Font Awesome Social icons menu in header.
+13 = Sidebar and Footer Widget Areas.
 
 /*-----------------------------------------------------------------------------------*/
 /* Description of Theme */
@@ -50,7 +50,7 @@ For questions, comments, bug reports or feature requests visit theme forum at ht
 /* Theme Resources */
 /*-----------------------------------------------------------------------------------*/
 
-Theme is Built using the following resource bundles.
+Bootville Lite is Built using the following resource bundles.
 
 1 - Underscores Starter Theme - http://underscores.me/
 	License: Distributed under the terms of the GPLv2
@@ -67,3 +67,8 @@ Theme is Built using the following resource bundles.
 4 - Bootstrap Framework
 	License: The MIT License (MIT)
 	Copyright: Twitter, Inc
+	
+5 - The photos used in the screenshot.png was downloaded from pixabay.com and are bound to Creative Commons Deed CC0 as stated in their Terms of Service and Privacy Policy (http://pixabay.com/en/service/terms/)
+-> https://pixabay.com/en/sunset-lake-landscape-weather-182079/
+-> https://pixabay.com/en/landscape-lake-nature-tree-trees-123830/
+License URI: http://creativecommons.org/publicdomain/zero/1.0/deed.en

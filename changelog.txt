@@ -1,5 +1,0 @@
-Bootville Lite changelog
-
-v1.5 - Added comment form submit button class
-
-v1.4 - fixed text domain typos
